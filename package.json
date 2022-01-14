@@ -4,7 +4,7 @@
   "description": "🔮 Studio Unwanted's Development Kit",
   "author": "Nathan A. | Studio Unwanted Dev. Team",
   "repository": "https://github.com/studio-unwanted/unwantedsdk",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "keywords": [
     "StudioUnwanted",
     "SDK",
