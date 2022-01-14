@@ -25,8 +25,10 @@
     "start": "npm run build",
     "start:dev": "nodemon",
     "build": "tsc -p tsconfig.json",
-    "build-all": "yarn clean && yarn build",
-    "prettier-format": "prettier --config .prettierrc 'src/**/*.ts' --write"
+    "build-all": "yarn clean && yarn prettier-format && yarn build",
+    "prettier-format": "prettier --config .prettierrc 'src/**/*.ts' --write",
+    "publish-major": "npm version major --force && npm publish",
+    "publish-minor":"npm version minor --force && npm publish"
   },
   "dependencies": {
     "big.js": "^5.2.2",
