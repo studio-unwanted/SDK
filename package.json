@@ -27,9 +27,9 @@
     "build": "tsc -p tsconfig.json",
     "build-all": "yarn clean && yarn prettier-format && yarn build",
     "prettier-format": "prettier --config .prettierrc 'src/**/*.ts' --write",
-    "publish-major": "npm version major --force  && yarn build-all && npm publish",
-    "publish-minor": "npm version minor --force && yarn build-all && npm publish",
-    "publish-patch": "npm version patch --force && yarn build-all && npm publish"
+    "publish-major": "npm version major --force  && yarn build-all && npm publish --registry=https://registry.npmjs.org/",
+    "publish-minor": "npm version minor --force && yarn build-all && npm publish --registry=https://registry.npmjs.org/",
+    "publish-patch": "npm version patch --force && yarn build-all && npm publish --registry=https://registry.npmjs.org/"
   },
   "dependencies": {
     "big.js": "^5.2.2",
