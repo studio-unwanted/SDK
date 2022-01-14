@@ -1,6 +1,6 @@
 {
   "name": "@studiounwanted/sdk",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "🔮 Studio Unwanted's Development Kit",
   "author": "Nathan A. | Studio Unwanted Dev. Team",
   "repository": "https://github.com/studio-unwanted/unwantedsdk",
@@ -28,7 +28,7 @@
     "build-all": "yarn clean && yarn prettier-format && yarn build",
     "prettier-format": "prettier --config .prettierrc 'src/**/*.ts' --write",
     "publish-major": "npm version major --force  && yarn build-all && npm publish",
-    "publish-minor":"npm version minor --force && yarn build-all && npm publish"
+    "publish-minor": "npm version minor --force && yarn build-all && npm publish"
   },
   "dependencies": {
     "big.js": "^5.2.2",
