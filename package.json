@@ -2,9 +2,9 @@
   "name": "@studiounwanted/sdk",
   "version": "1.2.4",
   "description": "🔮 Studio Unwanted's Development Kit",
-  "author": "Nathan A. | Studio Unwanted Dev. Team",
+  "author": "Nathan A. | TeamUnwanted",
   "repository": "https://github.com/studio-unwanted/unwantedsdk",
-  "license": "MIT",
+  "license": "UNLICENSED",
   "keywords": [
     "StudioUnwanted",
     "SDK",
@@ -23,7 +23,7 @@
     "ts-node": "ts-node",
     "docs": "typedoc --entryPoints src/main.ts",
     "start": "npm run build",
-    "start:dev": "nodemon",
+    "start:dev": "nodemon.json",
     "build": "tsc -p tsconfig.json",
     "build-all": "yarn clean && yarn prettier-format && yarn build",
     "prettier-format": "prettier --config .prettierrc 'src/**/*.ts' --write",
@@ -34,7 +34,8 @@
   "dependencies": {
     "big.js": "^5.2.2",
     "decimal.js-light": "^2.5.0",
-    "jsbi": "^3.1.1"
+    "jsbi": "^3.1.1",
+    "web3": "^1.6.1"
   },
   "devDependencies": {
     "@types/jest": "^26.0.21",
@@ -52,18 +53,6 @@
     "ts-node": "^9.1.1",
     "typedoc": "^0.20.35",
     "typescript": "^4.5.4",
-    "@ethersproject/address": "^5.0.2",
-    "@ethersproject/contracts": "^5.0.2",
-    "@ethersproject/networks": "^5.0.2",
-    "@ethersproject/providers": "^5.0.5",
-    "@ethersproject/solidity": "^5.0.2",
     "@types/big.js": "^4.0.5"
-  },
-  "peerDependencies": {
-    "@ethersproject/address": "^5.0.0-beta",
-    "@ethersproject/contracts": "^5.0.0-beta",
-    "@ethersproject/networks": "^5.0.0-beta",
-    "@ethersproject/providers": "^5.0.0-beta",
-    "@ethersproject/solidity": "^5.0.0-beta"
   }
 }
