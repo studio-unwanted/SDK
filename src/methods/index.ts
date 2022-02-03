@@ -5,7 +5,7 @@ import { getExponentialParts, isExponential } from '../utils';
  */
 export default class Methods {
   /**
-   * Converts a Big Number into a human readable string
+   * Converts a large string number into a human readable string while maintaining precision
    */
   static parseStringifiedNumber(num: number | string | Array<string>): string {
     const eParts: Array<string> = getExponentialParts(num);
