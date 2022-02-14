@@ -72,4 +72,18 @@ export default class Methods {
       }
     }
   }
+
+  static toSI(num: number | string | Array<string>): string | number {
+    return Math.abs(Number(num)) >= 1.0e15
+      ? Math.abs(Number(num)) / 1.0e15 + 'Q'
+      : Math.abs(Number(num)) >= 1.0e12
+      ? Math.abs(Number(num)) / 1.0e12 + 'T'
+      : Math.abs(Number(num)) >= 1.0e9
+      ? Math.abs(Number(num)) / 1.0e9 + 'B'
+      : Math.abs(Number(num)) >= 1.0e6
+      ? Math.abs(Number(num)) / 1.0e6 + 'M'
+      : Math.abs(Number(num)) >= 1.0e3
+      ? Math.abs(Number(num)) / 1.0e3 + 'K'
+      : Math.abs(Number(num));
+  }
 }
